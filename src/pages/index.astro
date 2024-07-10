@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import Pricing from "../components/Pricing.astro";
+import Intro from "../components/Intro.astro";
+import TopServices from "../components/TopServices.astro";
+import SideBySide from "../components/SideBySide.astro";
+import Benefits from "../components/Benefits.astro"; 
+import Features from "../components/Features.astro";
+import FAQ from "../components/FAQ.astro";
+import CTA from "../components/CTA.astro";
+---
+
+<BaseLayout pageTitle = "Home" pageDescription="this is a website offering Facebook Ads administration services for independent authors">
+	<html lang="en">
+		<head>
+		  <meta charset="utf-8" />
+		  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		  <meta name="viewport" content="width=device-width" />
+		  <meta name="generator" content={Astro.generator} />
+		  <title>Astro</title>
+		</head>
+		<body>
+		  <Hero />
+		  <SideBySide />
+		  <Benefits />
+		  <Features />
+		  <FAQ />
+		  <CTA />
+		</body>
+	  </html>
+</BaseLayout>	
+
